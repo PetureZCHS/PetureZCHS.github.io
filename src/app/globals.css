@@ -1,27 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* 萌宠风格配色 - Claymorphism */
+  --primary: #F97316;
+  --primary-light: #FB923C;
+  --primary-dark: #EA580C;
+  --secondary: #2563EB;
+  --secondary-light: #3B82F6;
+  --background: #FFF7ED;
+  --surface: #FFFFFF;
+  --foreground: #9A3412;
+  --foreground-light: #C2410C;
+  --muted: #F1F0F0;
+  --border: #FED7AA;
+  --destructive: #DC2626;
+  --ring: #F97316;
+  
+  /* 渐变色彩 */
+  --gradient-1: #FDBA74;
+  --gradient-2: #FED7AA;
+  --gradient-3: #FDE68A;
+  --gradient-4: #FCA5A5;
+  --gradient-5: #BFDBFE;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Nunito', 'PingFang SC', system-ui, sans-serif;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka', 'PingFang SC', system-ui, sans-serif;
+  }
+
+  * {
+    @apply border-border;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* 萌宠渐变背景 */
+  .gradient-mesh {
+    background: 
+      radial-gradient(at 20% 20%, var(--gradient-1) 0px, transparent 50%),
+      radial-gradient(at 80% 10%, var(--gradient-2) 0px, transparent 50%),
+      radial-gradient(at 10% 50%, var(--gradient-3) 0px, transparent 50%),
+      radial-gradient(at 90% 60%, var(--gradient-4) 0px, transparent 40%),
+      radial-gradient(at 30% 80%, var(--gradient-5) 0px, transparent 40%),
+      var(--background);
+    background-size: 100% 100%;
+  }
+
+  /* 粘土拟态卡片 - Claymorphism */
+  .clay-card {
+    background: var(--surface);
+    border-radius: 24px;
+    border: 3px solid var(--border);
+    box-shadow: 
+      8px 8px 16px rgba(249, 115, 22, 0.15),
+      -4px -4px 12px rgba(255, 255, 255, 0.8),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    transition: all 0.2s ease-out;
+  }
+
+  .clay-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+      12px 12px 24px rgba(249, 115, 22, 0.2),
+      -6px -6px 16px rgba(255, 255, 255, 0.9),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+
+  .clay-card:active {
+    transform: translateY(-2px);
+    box-shadow: 
+      4px 4px 8px rgba(249, 115, 22, 0.15),
+      -2px -2px 6px rgba(255, 255, 255, 0.8),
+      inset 2px 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  /* 蓬松按钮 - Fluffy Button */
+  .fluffy-btn {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    border-radius: 50px;
+    border: 3px solid var(--border);
+    box-shadow: 
+      0 6px 0 var(--primary-dark),
+      0 8px 16px rgba(249, 115, 22, 0.3);
+    transition: all 0.15s ease-out;
+  }
+
+  .fluffy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      0 8px 0 var(--primary-dark),
+      0 12px 24px rgba(249, 115, 22, 0.4);
+  }
+
+  .fluffy-btn:active {
+    transform: translateY(4px);
+    box-shadow: 
+      0 2px 0 var(--primary-dark),
+      0 4px 8px rgba(249, 115, 22, 0.3);
+  }
+
+  /* 软按压效果 */
+  .soft-press {
+    transition: transform 0.2s ease-out;
+  }
+
+  .soft-press:active {
+    transform: scale(0.98);
+  }
+
+  /* 萌宠图标容器 */
+  .pet-icon-container {
+    background: linear-gradient(135deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: 
+      0 4px 12px rgba(249, 115, 22, 0.2),
+      inset 0 2px 4px rgba(255, 255, 255, 0.5);
+  }
+
+  /* 浮动动画 */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* 摇摆动画 */
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+  }
+
+  .animate-wiggle {
+    animation: wiggle 2s ease-in-out infinite;
+  }
+
+  /* 弹跳动画 */
+  @keyframes bounce-soft {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-8px) scale(1.02); }
+  }
+
+  .animate-bounce-soft {
+    animation: bounce-soft 2s ease-in-out infinite;
+  }
+
+  /* 爪印装饰 */
+  .paw-print {
+    position: relative;
+  }
+
+  .paw-print::before {
+    content: '🐾';
+    position: absolute;
+    opacity: 0.1;
+    font-size: 3rem;
+    transform: rotate(-15deg);
+  }
+
+  /* 圆角气泡 */
+  .bubble {
+    background: white;
+    border-radius: 24px;
+    border: 3px solid var(--border);
+    position: relative;
+  }
+
+  .bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid var(--border);
+  }
+
+  .bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 32px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+    z-index: 1;
   }
 }
