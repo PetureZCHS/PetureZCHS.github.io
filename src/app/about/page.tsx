@@ -152,7 +152,7 @@ export default function AboutPage() {
               <Users className="h-4 w-4 text-primary" />
               <span className="text-sm font-semibold text-primary">我们的团队</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">践行使命的同路人</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">🐕🐈 践行使命的同路人 🐾</h2>
             <p className="text-foreground/60 max-w-2xl mx-auto">一群相信技术可以改变生活、认知可以创造价值的人</p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -188,7 +188,7 @@ export default function AboutPage() {
       <section className="py-20 sm:py-32">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">与我们同行</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">🐾 与我们同行 🐕🐈</h2>
             <p className="text-foreground/60 mb-8 max-w-xl mx-auto">无论是合作还是交流，我们期待与您一起探索认知的边界</p>
             <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-primary text-white font-semibold hover:opacity-90 transition-opacity">
               联系我们

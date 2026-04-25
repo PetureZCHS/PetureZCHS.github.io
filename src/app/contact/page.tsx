@@ -24,7 +24,7 @@ export default function ContactPage() {
     <div className="min-h-screen">
       <GradientBackground animated className="pt-32 pb-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold text-foreground lg:text-5xl">联系我们</h1>
+          <h1 className="text-4xl font-bold text-foreground lg:text-5xl">📞 联系我们 🐾</h1>
           <p className="mt-4 text-lg text-foreground/70">我们随时倾听你的声音</p>
         </div>
       </GradientBackground>

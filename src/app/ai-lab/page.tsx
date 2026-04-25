@@ -50,12 +50,12 @@ export default function AILabPage() {
       <GradientBackground animated className="pt-20 pb-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl font-bold text-foreground lg:text-6xl">AI 生图实验室</h1>
+            <h1 className="text-4xl font-bold text-foreground lg:text-6xl">🎨 AI 生图实验室 🐕🐈</h1>
             <p className="mt-4 text-lg text-foreground/70 lg:text-xl">一键生成宠物超萌头像和 iPhone 空间景深壁纸</p>
           </div>
 
           <div className="mt-16">
-            <h2 className="text-center text-xl font-semibold text-foreground mb-8">头像风格</h2>
+            <h2 className="text-center text-xl font-semibold text-foreground mb-8">🐱 头像风格 🐶</h2>
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
               {DEMO_STYLES.map((style) => (
                 <div key={style.name} className="group relative aspect-square cursor-pointer overflow-hidden rounded-2xl bg-surface shadow-md transition-all hover:shadow-lg hover:-translate-y-1">
@@ -77,7 +77,7 @@ export default function AILabPage() {
           </div>
 
           <div className="mt-16">
-            <h2 className="text-center text-xl font-semibold text-foreground mb-8">手机壁纸</h2>
+            <h2 className="text-center text-xl font-semibold text-foreground mb-8">📱 手机壁纸 🐾</h2>
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
               {MOBILE_WALLPAPERS.map((style) => (
                 <div key={style.name} className="group relative aspect-[9/16] cursor-pointer overflow-hidden rounded-2xl bg-surface shadow-md transition-all hover:shadow-lg hover:-translate-y-1">
@@ -99,7 +99,7 @@ export default function AILabPage() {
           </div>
 
           <div className="mt-16">
-            <h2 className="text-center text-xl font-semibold text-foreground mb-8">电脑壁纸</h2>
+            <h2 className="text-center text-xl font-semibold text-foreground mb-8">💻 电脑壁纸 🦮</h2>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {DESKTOP_WALLPAPERS.map((style) => (
                 <div key={style.name} className="group relative aspect-[16/9] cursor-pointer overflow-hidden rounded-2xl bg-surface shadow-md transition-all hover:shadow-lg hover:-translate-y-1">

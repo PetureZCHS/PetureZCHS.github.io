@@ -52,7 +52,7 @@ export default function PricingPage() {
     <div className="min-h-screen">
       <GradientBackground animated className="pt-32 pb-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold text-foreground lg:text-5xl">定价</h1>
+          <h1 className="text-4xl font-bold text-foreground lg:text-5xl">💰 定价 🐕🐈</h1>
           <p className="mt-4 text-lg text-foreground/70">选择最适合您的方案</p>
           <div className="mt-8 flex justify-center gap-4">
             <span className="text-sm text-foreground/60">月付</span>

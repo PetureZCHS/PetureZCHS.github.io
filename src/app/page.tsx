@@ -18,8 +18,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "智宠合生 Peture | 宠物 AI 服务平台",
-  description: "用 AI 技术为您的宠物提供个性化服务，打造全方位智慧养宠体验",
+  title: "🐾 智宠合生 Peture | 宠物 AI 服务平台",
+  description: "用 AI 技术为您的宠物提供个性化服务，打造全方位智慧养宠体验 🐕🐈",
   keywords: "宠物,养宠,AI 宠物,宠物服务,宠物管理,宠物健康,宠物记账,AI 生图",
 };
 
@@ -72,19 +72,19 @@ const testimonials = [
   {
     content: "Peture 的 AI 助手帮我解决了好多养宠问题，深夜有状况也不怕了！",
     author: "李女士",
-    role: "金毛主人",
+    role: "金毛主人 🦮",
     avatar: "🐕",
   },
   {
     content: "记账功能太实用了，终于知道每个月在主子身上花了多少钱。",
     author: "王先生",
-    role: "布偶猫主人",
+    role: "布偶猫主人 🐈",
     avatar: "🐱",
   },
   {
     content: "AI 生成的壁纸超好看，现在锁屏就是我家的猫咪！",
     author: "张小姐",
-    role: "英短主人",
+    role: "英短主人 🐈‍⬛",
     avatar: "🐈",
   },
 ];

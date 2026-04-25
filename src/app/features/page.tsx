@@ -83,7 +83,7 @@ export default function FeaturesPage() {
       <div className="gradient-mesh pt-24 lg:pt-32">
         <SectionWrapper>
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl font-bold text-foreground lg:text-6xl">全方位养宠解决方案</h1>
+            <h1 className="text-4xl font-bold text-foreground lg:text-6xl">🐾 全方位养宠解决方案 🐕🐈</h1>
             <p className="mt-4 text-lg text-foreground/70 lg:text-xl">实用工具与趣味功能，满足你和毛孩子的所有需求</p>
           </div>
         </SectionWrapper>
