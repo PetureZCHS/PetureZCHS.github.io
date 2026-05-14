@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { SectionWrapper } from "@/components/SectionWrapper";
 
 export const metadata: Metadata = {
-  title: "用户协议 | 智宠合生 Peture",
+  title: "用户协议",
   description: "智宠合生 Peture 用户协议，请在使用前仔细阅读并了解我们的服务条款及规范",
 };
 

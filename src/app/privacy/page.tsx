@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { SectionWrapper } from "@/components/SectionWrapper";
 
 export const metadata: Metadata = {
-  title: "隐私政策 | 智宠合生 Peture",
+  title: "隐私政策",
   description: "智宠合生 Peture 隐私政策，了解我们如何收集、使用和保护您的个人信息",
 };
 
