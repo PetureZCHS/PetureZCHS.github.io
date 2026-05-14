@@ -35,7 +35,7 @@ export function OrganizationJsonLd() {
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      email: "peture.team@gmail.com",
+      email: "peture_app@outlook.com",
       contactType: "customer service",
     },
     potentialAction: {

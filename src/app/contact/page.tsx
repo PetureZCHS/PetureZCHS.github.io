@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 const CONTACT_METHODS = [
-  { title: "电子邮件", description: "工作日 24 小时内回复", detail: "peture.team@gmail.com", action: "发送邮件", href: "mailto:peture.team@gmail.com" },
+  { title: "电子邮件", description: "工作日 24 小时内回复", detail: "peture_app@outlook.com", action: "发送邮件", href: "mailto:peture_app@outlook.com" },
   { title: "微信客服", description: "工作日 10:00-18:00", detail: "Peture 小助手", action: "添加客服", href: "#" },
-  { title: "商务合作", description: "有意请发送邮件至", detail: "peture.team@gmail.com", action: "合作咨询", href: "mailto:peture.team@gmail.com" },
+  { title: "商务合作", description: "有意请发送邮件至", detail: "peture_app@outlook.com", action: "合作咨询", href: "mailto:peture_app@outlook.com" },
   { title: "帮助中心", description: "常见问题解答", detail: "帮助中心即将上线", action: "敬请期待", href: "#" },
 ];
 

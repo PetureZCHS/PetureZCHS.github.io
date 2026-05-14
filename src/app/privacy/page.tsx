@@ -32,14 +32,14 @@ export default function PrivacyPage() {
       <SectionWrapper>
         <div className="mx-auto max-w-4xl px-6 md:px-8 space-y-8 text-foreground/80 leading-relaxed md:pb-20">
           <p>
-            欢迎您使用“Peture（智宠合生）”（以下简称“本应用”或“我们”）。我们非常重视您的个人信息和隐私保护。本隐私政策将帮助您了解我们如何收集、使用、存储和保护您的个人信息。请您在使用本应用前,仔细阅读并充分理解本隐私政策。
+            欢迎您使用“Peture（智宠合生）”（以下简称“本应用”或“我们”）。我们非常重视您的个人信息和隐私保护。本隐私政策将帮助您了解我们如何收集、使用、存储和保护您的个人信息。请您在使用本应用前，仔细阅读并充分理解本隐私政策。
           </p>
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">重要提示（首次使用需同意）</h2>
-            <p className="mb-4">在您首次使用本应用时,我们将通过弹窗形式向您展示本隐私政策,您需点击“同意”后方可继续使用应用的全部功能。</p>
+            <p className="mb-4">在您首次使用本应用时，我们将通过弹窗形式向您展示本隐私政策，您需点击“同意”后方可继续使用应用的全部功能。</p>
             <p className="mb-4">本应用收集的<strong className="text-foreground">手机号码、交易记录、宠物医疗记录、宠物健康信息、地理位置信息</strong>属于敏感个人信息，我们将严格按照法律法规要求进行保护，仅在为提供服务所必需的最小范围内收集和使用，并会通过独立弹窗获取您的单独同意。</p>
-            <p className="mb-4">如您不同意本政策,您将无法使用核心服务（如登录、AI问诊、数据存储等）。</p>
+            <p className="mb-4">如您不同意本政策，您将无法使用核心服务（如登录、AI问诊、数据存储等）。</p>
             <p className="mb-2"><strong className="text-foreground">单独同意提示：</strong>对于以下高风险个人信息处理活动，我们将通过<strong className="text-foreground">独立弹窗</strong>获取您的单独书面同意，不会将该同意与其他用户协议捆绑：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>跨境数据传输；</li>
@@ -52,10 +52,10 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">一、我们收集的信息</h2>
-            <p className="mb-4">在您使用本应用过程中,我们可能会收集以下类型的信息:</p>
+            <p className="mb-4">在您使用本应用过程中，我们可能会收集以下类型的信息：</p>
             
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">1. 账户与身份信息</h3>
-            <p className="mb-2">当您注册或登录时,我们可能收集:</p>
+            <p className="mb-2">当您注册或登录时，我们可能收集：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li><strong className="text-foreground">手机号码</strong>（用于手机号登录）</li>
               <li>邮箱地址（用于邮箱登录）</li>
@@ -65,24 +65,24 @@ export default function PrivacyPage() {
             </ul>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">2. 宠物档案信息（由您主动提供）</h3>
-            <p className="mb-2">为了提供宠物管理服务,我们会收集您填写的宠物信息:</p>
+            <p className="mb-2">为了提供宠物管理服务，我们会收集您填写的宠物信息：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
-              <li>基本信息:名称、类型、品种、性别、年龄</li>
-              <li><strong className="text-foreground">健康信息:医疗记录、疫苗记录、体重记录</strong></li>
-              <li>其他信息:出生日期、绝育状态、宠物头像</li>
+              <li>基本信息：名称、类型、品种、性别、年龄</li>
+              <li><strong className="text-foreground">健康信息：医疗记录、疫苗记录、体重记录</strong></li>
+              <li>其他信息：出生日期、绝育状态、宠物头像</li>
             </ul>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">3. AI 对话与问诊数据</h3>
-            <p className="mb-2">当您使用“AI 智能问诊”功能时:</p>
+            <p className="mb-2">当您使用“AI 智能问诊”功能时：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>您输入的文本内容</li>
               <li>AI 返回内容</li>
               <li>对话上下文及记录</li>
             </ul>
-            <p className="mb-4 text-sm bg-muted/50 p-3 rounded-md">重要说明: 上述内容将通过网络传输至第三方 AI 服务用于生成回复（详见第六条）。</p>
+            <p className="mb-4 text-sm bg-muted/50 p-3 rounded-md">重要说明： 上述内容将通过网络传输至第三方 AI 服务用于生成回复（详见第六条）。</p>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">4. 设备与日志信息（自动收集）</h3>
-            <p className="mb-2">为保障系统安全与稳定运行,我们可能收集:</p>
+            <p className="mb-2">为保障系统安全与稳定运行，我们可能收集：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>设备标识符（如IMEI、Android ID、IDFA、OAID等）</li>
               <li>操作系统版本</li>
@@ -92,7 +92,7 @@ export default function PrivacyPage() {
             </ul>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">5. 使用记录信息</h3>
-            <p className="mb-2">在您使用应用过程中,我们可能收集:</p>
+            <p className="mb-2">在您使用应用过程中，我们可能收集：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>功能使用记录（如使用 AI 问诊、记录宠物信息等）</li>
               <li>页面访问记录（用于优化体验）</li>
@@ -108,12 +108,12 @@ export default function PrivacyPage() {
             </ol>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">7. 图片信息</h3>
-            <p className="mb-4">当您上传宠物头像时,我们会访问您的设备相册,并处理您选择的图片。您上传的宠物头像仅用于展示，我们不会将其用于任何其他用途；您可随时删除已上传的头像。</p>
+            <p className="mb-4">当您上传宠物头像时，我们会访问您的设备相册，并处理您选择的图片。您上传的宠物头像仅用于展示，我们不会将其用于任何其他用途；您可随时删除已上传的头像。</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">二、我们如何使用您的信息</h2>
-            <p className="mb-2">我们收集信息用于以下目的:</p>
+            <p className="mb-2">我们收集信息用于以下目的：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>提供宠物管理与记录功能</li>
               <li>实现 AI 智能问诊服务</li>
@@ -128,7 +128,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">三、Cookie 与类似技术</h2>
-            <p className="mb-2">在 Web 端或相关服务中,我们可能使用 Cookie 或类似技术用于:</p>
+            <p className="mb-2">在 Web 端或相关服务中，我们可能使用 Cookie 或类似技术用于：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>维持登录状态</li>
               <li>提升用户体验</li>
@@ -141,7 +141,7 @@ export default function PrivacyPage() {
             <h2 className="text-2xl font-bold text-foreground mb-4">四、我们如何存储您的信息</h2>
             
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">1. 存储方式</h3>
-            <p className="mb-2">您的信息可能存储于:</p>
+            <p className="mb-2">您的信息可能存储于：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>本地设备（SQLite 数据库）</li>
               <li>云端服务器（Supabase 提供）</li>
@@ -159,7 +159,7 @@ export default function PrivacyPage() {
             <p className="mb-4">存储期限届满后，我们将立即对您的个人信息进行删除或去标识化处理。</p>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">3. 数据安全措施</h3>
-            <p className="mb-2">我们采取包括但不限于以下措施:</p>
+            <p className="mb-2">我们采取包括但不限于以下措施：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>HTTPS 加密传输</li>
               <li>数据访问权限控制</li>
@@ -173,9 +173,9 @@ export default function PrivacyPage() {
             <h2 className="text-2xl font-bold text-foreground mb-4">五、信息共享、转让与公开披露</h2>
             
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">1. 信息共享</h3>
-            <p className="mb-2">我们不会出售您的个人信息,但在以下情况下可能共享:</p>
+            <p className="mb-2">我们不会出售您的个人信息，但在以下情况下可能共享：</p>
             <p className="mb-2">（1）第三方服务提供商</p>
-            <p className="mb-2">为实现功能,我们可能向以下服务提供必要信息:</p>
+            <p className="mb-2">为实现功能，我们可能向以下服务提供必要信息：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>数据存储服务</li>
               <li>用户认证服务</li>
@@ -183,13 +183,13 @@ export default function PrivacyPage() {
             </ul>
             <p className="mb-4">详见第六条。</p>
             <p className="mb-2">（2）法律要求</p>
-            <p className="mb-4">在法律法规要求或政府机关要求下,我们可能披露您的信息。</p>
+            <p className="mb-4">在法律法规要求或政府机关要求下，我们可能披露您的信息。</p>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">2. 信息转让</h3>
-            <p className="mb-4">如发生合并、收购或资产转让,我们会确保您的信息继续受到保护。</p>
+            <p className="mb-4">如发生合并、收购或资产转让，我们会确保您的信息继续受到保护。</p>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">3. 信息公开披露</h3>
-            <p>除法律要求外,我们不会公开披露您的个人信息。</p>
+            <p>除法律要求外，我们不会公开披露您的个人信息。</p>
           </section>
 
           <section>
@@ -248,7 +248,7 @@ export default function PrivacyPage() {
               <li>解释说明权：您有权要求我们就个人信息处理规则进行解释说明。</li>
               <li>转移权（携带权）：符合国家网信部门规定条件的，我们将提供便捷的转移途径将您的信息转移至您指定的第三方。</li>
             </ol>
-            <p>如需行使上述权利,请通过下方联系方式与我们联系。</p>
+            <p>如需行使上述权利，请通过下方联系方式与我们联系。</p>
           </section>
 
           <section>
@@ -272,7 +272,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">十、权限说明</h2>
-            <p className="mb-2">本应用可能申请以下权限:</p>
+            <p className="mb-2">本应用可能申请以下权限：</p>
             
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">1. 存储权限</h3>
             <p className="mb-4">用于上传图片、缓存数据</p>
@@ -339,7 +339,7 @@ export default function PrivacyPage() {
             <ul className="list-disc pl-6 space-y-2">
               <li><strong className="text-foreground">AI 生成内容局限性</strong>：本应用提供的 AI 智能问诊服务仅为线上初步建议，不构成专业兽医诊断、治疗方案或处方，不能替代执业兽医的当面诊疗。若您的宠物出现健康问题，请及时咨询线下执业兽医。</li>
               <li><strong className="text-foreground">AI 内容标识</strong>：所有 AI 生成的内容均会进行<strong className="text-foreground">双重标识</strong>：显式标识（文字标注 "AI 生成"）和隐式标识（嵌入文件元数据），用户不得删除或篡改该标识。</li>
-              <li><strong className="text-foreground">有害内容举报</strong>：若您发现 AI 生成了违法、违规或有害内容，请通过以下路径一键举报：「设置 - 帮助与反馈 - AI 内容举报」，或发送邮件至 support@peture.app。我们将在 24 小时内响应，7 个工作日内完成处理并删除相关内容。</li>
+              <li><strong className="text-foreground">有害内容举报</strong>：若您发现 AI 生成了违法、违规或有害内容，请通过以下路径一键举报：「设置 - 帮助与反馈 - AI 内容举报」，或发送邮件至 peture_app@outlook.com。我们将在 24 小时内响应，7 个工作日内完成处理并删除相关内容。</li>
               <li><strong className="text-foreground">责任划分</strong>：因 AI 生成内容侵犯第三方合法权益的，由我们承担相应法律责任，但因您提供的输入内容违法或侵权导致的除外。</li>
               <li><strong className="text-foreground">知识产权说明</strong>：本应用 AI 生成的文字、图像等内容的知识产权归我们所有，您仅享有个人非商业使用的权利；未经我们书面许可，不得将 AI 生成内容用于商业用途。</li>
             </ul>
@@ -347,7 +347,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">十三、隐私政策更新</h2>
-            <p className="mb-2">我们可能不定期更新本隐私政策:</p>
+            <p className="mb-2">我们可能不定期更新本隐私政策：</p>
             <ul className="list-disc pl-6 space-y-1">
               <li>更新后将在应用内展示</li>
               <li>重大变更将重新征得您的同意</li>
@@ -356,13 +356,13 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">十四、隐私政策入口说明（App 内）</h2>
-            <p className="mb-2">您可以随时通过以下路径查看本隐私政策:</p>
+            <p className="mb-2">您可以随时通过以下路径查看本隐私政策：</p>
             <p className="bg-muted/50 inline-block px-3 py-1 rounded-md text-sm">设置页面 → 关于 / 隐私政策</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">十五、联系我们</h2>
-            <p className="mb-4">如您对本隐私政策有任何疑问或请求,请联系:</p>
+            <p className="mb-4">如您对本隐私政策有任何疑问或请求，请联系：</p>
             <ul className="list-none space-y-2 mb-6 text-foreground/90">
               <li className="flex items-center gap-2">📧 <span className="font-semibold">联系邮箱：</span><a href="mailto:peture_app@outlook.com" className="text-primary hover:underline">peture_app@outlook.com</a></li>
               <li className="flex items-center gap-2">🏢 <span className="font-semibold">开发者/团队名称：</span>智宠合生开发团队</li>

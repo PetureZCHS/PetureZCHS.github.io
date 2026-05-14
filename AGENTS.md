@@ -125,7 +125,7 @@ src/
 ## 8. 联系信息
 
 - **总部**：中国 · 合肥
-- **邮箱**：peture.team@gmail.com
+- **邮箱**：peture_app@outlook.com
 - **网站**：https://peture.com
 
 ---

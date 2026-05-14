@@ -73,7 +73,7 @@ const defaultSections: FooterSection[] = [
 const defaultSocialLinks = [
   { icon: <GithubIcon className="h-5 w-5" />, href: "https://github.com", label: "GitHub" },
   { icon: <TwitterIcon className="h-5 w-5" />, href: "https://twitter.com", label: "Twitter" },
-  { icon: <Mail className="h-5 w-5" />, href: "mailto:peture.team@gmail.com", label: "Email" },
+  { icon: <Mail className="h-5 w-5" />, href: "mailto:peture_app@outlook.com", label: "Email" },
 ];
 
 const defaultCopyright = `© ${new Date().getFullYear()} Peture 🐾 无限延伸认知边界，让美好触手可及 🐕🐈`;

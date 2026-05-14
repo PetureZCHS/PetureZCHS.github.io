@@ -144,7 +144,7 @@ npm run build
 
 ## 📞 联系我们
 
-- **邮箱**: peture.team@gmail.com
+- **邮箱**: peture_app@outlook.com
 - **总部**: 中国 · 合肥
 
 ---

@@ -121,7 +121,7 @@ export default function TermsPage() {
             <p className="mb-4">3.2.6 自动续费服务取消后，已开通的服务将持续至当前计费周期结束，我们不会再扣除下一期费用。</p>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">3.3 第三方服务</h3>
-            <p className="mb-2">3.3.1 本应用可能包含指向第三方网站、应用或服务的链接。您理解并同意:</p>
+            <p className="mb-2">3.3.1 本应用可能包含指向第三方网站、应用或服务的链接。您理解并同意：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>我们对第三方服务的内容、准确性、合法性不承担任何责任；</li>
               <li>您与第三方之间的交易或纠纷由您自行解决；</li>
@@ -132,8 +132,8 @@ export default function TermsPage() {
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">3.4 AI 算法与生成式服务说明</h3>
             <p className="mb-2">3.4.1 本应用包含基于人工智能算法提供的宠物健康档案分析、行为建议及咨询服务 。</p>
-            <p className="mb-2">3.4.2 AI 生成内容声明： 本应用生成的文字、建议、图像等内容均为 AI 模型根据用户输入的数据自动生成，具有局限性，不代表开发团队的立场。</p>
-            <p className="mb-2">3.4.3 非专业医疗替代： AI 提供的所有宠物健康、训练、医疗相关建议仅供参考，不构成专业医疗诊断、治疗方案、处方或法律意见，不能替代执业兽医的当面诊疗。若宠物出现紧急情况，请务必咨询持有执业资格的专业兽医 。</p>
+            <p className="mb-2">3.4.2 AI 生成内容声明：本应用生成的文字、建议、图像等内容均为 AI 模型根据用户输入的数据自动生成，具有局限性，不代表开发团队的立场。</p>
+            <p className="mb-2">3.4.3 非专业医疗替代：AI 提供的所有宠物健康、训练、医疗相关建议仅供参考，不构成专业医疗诊断、治疗方案、处方或法律意见，不能替代执业兽医的当面诊疗。若宠物出现紧急情况，请务必咨询持有执业资格的专业兽医 。</p>
             <p className="mb-2">3.4.4 标识义务：我们会对所有 AI 生成的内容进行<strong className="text-foreground">双重标识</strong>：</p>
             <ol className="list-decimal pl-6 mb-2 space-y-1">
               <li><strong className="text-foreground">显式标识</strong>：在内容显著位置添加文字标注（如 "AI 生成"）或水印，确保人眼可见；</li>
@@ -149,7 +149,7 @@ export default function TermsPage() {
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">3.5 个性化推荐服务</h3>
             <p className="mb-2">3.5.1 为提升用户体验，我们可能会根据您的宠物信息和浏览记录，利用算法向您推荐可能感兴趣的内容或商品 。</p>
-            <p className="mb-2">3.5.2 自主选择权： 您有权在应用的“设置-隐私管理”中随时关闭“个性化推荐”功能。关闭后，我们将不再基于您的个人偏好推送特定内容。</p>
+            <p className="mb-2">3.5.2 自主选择权：您有权在应用的“设置-隐私管理”中随时关闭“个性化推荐”功能。关闭后，我们将不再基于您的个人偏好推送特定内容。</p>
             <p className="mb-2">3.5.3 我们通过算法推荐的商品或服务广告，将显著标明 "广告" 字样，与非广告内容区分。</p>
             <p>3.5.4 您关闭个性化推荐后，我们仍会向您展示通用内容，不会降低服务质量。</p>
           </section>
@@ -161,9 +161,9 @@ export default function TermsPage() {
             <p className="mb-2">您承诺在使用本应用服务时遵守中华人民共和国法律法规，不得从事以下行为：</p>
             <ul className="list-none space-y-1 mb-4">
               <li>4.1.1 违反宪法确定的基本原则，危害国家安全、泄露国家秘密、颠覆国家政权、破坏国家统一；</li>
-              <li>4.1.2 损害国家荣誉和利益，煽动民族仇恨、民族歧视,破坏民族团结；</li>
+              <li>4.1.2 损害国家荣誉和利益，煽动民族仇恨、民族歧视，破坏民族团结；</li>
               <li>4.1.3 破坏国家宗教政策，宣扬邪教和封建迷信；</li>
-              <li>4.1.4 散布谣言,扰乱社会秩序，破坏社会稳定；</li>
+              <li>4.1.4 散布谣言，扰乱社会秩序，破坏社会稳定；</li>
               <li>4.1.5 散布淫秽、色情、赌博、暴力、凶杀、恐怖或教唆犯罪的信息；</li>
               <li>4.1.6 侮辱或诽谤他人，侵害他人合法权益；</li>
               <li>4.1.7 侵犯他人知识产权、商业秘密、肖像权、隐私权等合法权益；</li>
@@ -173,7 +173,7 @@ export default function TermsPage() {
             </ul>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">4.2 禁止行为</h3>
-            <p className="mb-2">您不得从事以下行为:</p>
+            <p className="mb-2">您不得从事以下行为：</p>
             <ul className="list-none space-y-1 mb-4">
               <li>4.2.1 对本应用进行反向工程、反向汇编、反向编译或以其他方式尝试发现源代码；</li>
               <li>4.2.2 使用任何自动化程序、软件、引擎、网络爬虫、网页分析工具、数据挖掘工具或类似工具接入本应用服务；</li>
@@ -187,8 +187,8 @@ export default function TermsPage() {
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">4.3 内容发布规范</h3>
             <p className="mb-2">4.3.1 您在本应用发布的内容（包括但不限于文字、图片、视频、评论等）应真实、合法、健康，不得含有违法或不良信息。</p>
-            <p className="mb-2">4.3.2 您发布的内容如涉及他人（包括您的宠物）的肖像、隐私等信息,您应确保已获得合法授权。</p>
-            <p className="mb-2">4.3.3 您理解并同意，您在本应用上传、发布的任何内容,即视为您授予我们在全球范围内免费、非独家、可再许可的权利，使我们有权为提供服务和宣传推广之目的使用、复制、修改、改编、出版、翻译、传播该等内容，您保留对该等内容的完整知识产权。</p>
+            <p className="mb-2">4.3.2 您发布的内容如涉及他人（包括您的宠物）的肖像、隐私等信息，您应确保已获得合法授权。</p>
+            <p className="mb-2">4.3.3 您理解并同意，您在本应用上传、发布的任何内容，即视为您授予我们在全球范围内免费、非独家、可再许可的权利，使我们有权为提供服务和宣传推广之目的使用、复制、修改、改编、出版、翻译、传播该等内容，您保留对该等内容的完整知识产权。</p>
             <p>4.3.4 您应确保上传的宠物健康记录、医疗信息、疫苗记录等内容真实准确；因信息虚假或不完整导致 AI 建议错误、医疗预约失误或其他后果的，由您自行承担全部责任。</p>
           </section>
 
@@ -196,33 +196,33 @@ export default function TermsPage() {
             <h2 className="text-2xl font-bold text-foreground mb-4">五、个人信息保护</h2>
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">5.1 信息收集</h3>
             <p className="mb-2">5.1.1 我们非常重视您的个人信息保护，将按照《中华人民共和国个人信息保护法》等法律法规的规定收集、使用、存储和保护您的个人信息。</p>
-            <p className="mb-2">5.1.2 我们收集的个人信息类型包括但不限于:</p>
+            <p className="mb-2">5.1.2 我们收集的个人信息类型包括但不限于：</p>
             <ul className="list-disc pl-6 mb-2 space-y-1">
-              <li>基本资料: 昵称、头像、性别、年龄等；</li>
-              <li>联系信息: 手机号码、电子邮箱、地址等；</li>
-              <li>宠物信息: 宠物名称、品种、年龄、健康状况、疫苗记录等；</li>
-              <li>设备信息: 设备型号、操作系统版本、设备标识符（IMEI、Android ID、IDFA等）、IP地址等；</li>
-              <li>位置信息: 经您授权后获取的地理位置信息；</li>
-              <li>使用记录: 浏览记录、点击记录、搜索记录、交易记录等；</li>
+              <li>基本资料：昵称、头像、性别、年龄等；</li>
+              <li>联系信息：手机号码、电子邮箱、地址等；</li>
+              <li>宠物信息：宠物名称、品种、年龄、健康状况、疫苗记录等；</li>
+              <li>设备信息：设备型号、操作系统版本、设备标识符（IMEI、Android ID、IDFA等）、IP地址等；</li>
+              <li>位置信息：经您授权后获取的地理位置信息；</li>
+              <li>使用记录：浏览记录、点击记录、搜索记录、交易记录等；</li>
             </ul>
             <p className="mb-2">我们仅收集为提供服务所必需的个人信息，不会收集与服务无关的信息；生物识别信息仅用于身份验证，不存储原始特征数据，验证完成后立即删除。</p>
             <p className="mb-4">5.1.3 我们收集个人信息的目的是为您提供服务、改进产品体验、保障账号安全及遵守法律法规要求。</p>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">5.2 信息使用与共享</h3>
-            <p className="mb-2">5.2.1 我们仅在以下情况下使用您的个人信息:</p>
+            <p className="mb-2">5.2.1 我们仅在以下情况下使用您的个人信息：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>为您提供本应用服务所必需；</li>
               <li>改进和优化我们的服务；</li>
               <li>保障账号和交易安全；</li>
               <li>经您同意的其他用途。</li>
             </ul>
-            <p className="mb-2">5.2.2 我们不会将您的个人信息出售给任何第三方，但以下情况除外:</p>
+            <p className="mb-2">5.2.2 我们不会将您的个人信息出售给任何第三方，但以下情况除外：</p>
             <ul className="list-disc pl-6 mb-2 space-y-1">
               <li>获得您的明确同意；</li>
               <li>根据法律法规规定或政府主管部门要求；</li>
               <li>为维护我们或公众的合法权益所必需；</li>
               <li>与关联公司共享（仅在必要范围内且受本协议约束）；</li>
-              <li>与可信赖的合作伙伴共享（仅用于提供服务所必需,且受保密义务约束）。</li>
+              <li>与可信赖的合作伙伴共享（仅用于提供服务所必需，且受保密义务约束）。</li>
             </ul>
             <p className="mb-4">与第三方共享个人信息时，我们将对信息进行去标识化处理，并要求第三方严格遵守保密义务，不得将信息用于约定以外的用途。</p>
 
@@ -232,7 +232,7 @@ export default function TermsPage() {
             <p className="mb-4">5.3.3 如发生个人信息泄露等安全事件，我们将立即采取补救措施，并在 72 小时内将事件情况、影响范围、风险等级及应对措施告知受影响用户，同时依法向网信等监管部门报告。</p>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">5.4 您的权利</h3>
-            <p className="mb-2">根据相关法律法规,您对自己的个人信息享有以下权利:</p>
+            <p className="mb-2">根据相关法律法规，您对自己的个人信息享有以下权利：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>查询、复制您的个人信息；</li>
               <li>更正、补充不准确的个人信息；</li>
@@ -266,7 +266,7 @@ export default function TermsPage() {
             <p className="mb-4">7.1.2 本应用仅提供线上社交与信息发布平台，用户通过本应用发起的线下见面、宠物寄养、宠物交易等活动，相关风险与责任由参与方自行承担；我们不对线下活动的安全性、合法性承担任何担保责任。</p>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">7.2 服务中断与变更</h3>
-            <p className="mb-2">7.2.1 我们不对以下情况导致的服务中断或终止承担责任:</p>
+            <p className="mb-2">7.2.1 我们不对以下情况导致的服务中断或终止承担责任：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>系统维护、升级或故障修复；</li>
               <li>不可抗力因素，包括但不限于自然灾害、战争、政府行为、网络攻击等；</li>
@@ -282,7 +282,7 @@ export default function TermsPage() {
             <p className="mb-4">7.3.2 如您违反本协议或相关法律法规，导致我们遭受损失（包括但不限于经济损失、声誉损失、律师费等），您应予以赔偿。</p>
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">7.4 责任限制</h3>
-            <p className="mb-2">在法律法规允许的最大范围内，我们对以下情况不承担赔偿责任:</p>
+            <p className="mb-2">在法律法规允许的最大范围内，我们对以下情况不承担赔偿责任：</p>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>任何间接的、附带的、特殊的、惩罚性的或后果性的损害；</li>
               <li>因您使用或无法使用本应用服务而导致的利润损失、数据丢失、商誉损失等；</li>
@@ -307,7 +307,7 @@ export default function TermsPage() {
               <li>永久终止账号使用并列入黑名单；</li>
               <li>对于涉嫌违法犯罪的账号，我们将保留相关记录，并向公安机关报案；</li>
             </ul>
-            <p className="mb-2">账号被永久封禁后，您已购买但未使用的虚拟服务将自动失效，我们不予退还费用；但因我们过错导致账号错误封禁的除外。<br/>告知与申诉： 我们在采取上述处置措施时，将通过站内信、邮件或短信等方式告知您处理结论及原因。如您对处理结果有异议，可在收到通知之日起 7 个工作日内 通过本协议约定的联系方式向我们发起申诉。我们将在收到申诉后的 15 个工作日内 完成复核并告知您复核结果。</p>
+            <p className="mb-2">账号被永久封禁后，您已购买但未使用的虚拟服务将自动失效，我们不予退还费用；但因我们过错导致账号错误封禁的除外。<br/>告知与申诉：我们在采取上述处置措施时，将通过站内信、邮件或短信等方式告知您处理结论及原因。如您对处理结果有异议，可在收到通知之日起 7 个工作日内 通过本协议约定的联系方式向我们发起申诉。我们将在收到申诉后的 15 个工作日内 完成复核并告知您复核结果。</p>
             <p>8.2.3 终止后的数据处理：协议终止或账号注销后，除法律法规另有规定（如《电子商务法》要求商品和服务信息、交易记录保存时间自交易完成之日起不少于 三年；《网络安全法》要求的日志留存不少于 六个月）外，我们将停止为您提供服务，并在 15 个工作日内对您的个人信息进行删除或去标识化处理。</p>
           </section>
 
@@ -318,22 +318,21 @@ export default function TermsPage() {
 
             <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">9.2 争议解决</h3>
             <p className="mb-2">9.2.1 因本协议引起的或与本协议相关的任何争议，双方应首先通过友好协商解决。</p>
-            <p>9.2.2 因本协议引起的或与本协议相关的任何争议，协商不成的，任何一方均可向本协议签订地有管辖权的人民法院提起诉讼。</p>
+            <p>9.2.2 因本协议引起的或与本协议相关的任何争议，协商不成的，任何一方均可向开发者所在地有管辖权的人民法院提起诉讼。</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">十、其他条款</h2>
             <p className="mb-2"><strong className="text-foreground">10.1 完整协议：</strong>本协议构成您与我们之间关于本应用服务的完整协议，取代双方此前就相同事项达成的任何口头或书面协议。</p>
-            <p className="mb-2"><strong className="text-foreground">10.2 可分割性：</strong>如本协议任何条款被认定为无效或不可执行，该条款应在必要范围内进行修改以使其可执行,其余条款仍具有完全效力。</p>
+            <p className="mb-2"><strong className="text-foreground">10.2 可分割性：</strong>如本协议任何条款被认定为无效或不可执行，该条款应在必要范围内进行修改以使其可执行，其余条款仍具有完全效力。</p>
             <p className="mb-2"><strong className="text-foreground">10.3 权利不放弃：</strong>我们未行使或延迟行使本协议项下的任何权利，不构成对该权利的放弃。</p>
             <p className="mb-2"><strong className="text-foreground">10.4 转让：</strong>未经我们书面同意，您不得将本协议项下的权利义务转让给任何第三方。我们有权在符合法律法规的前提下将本协议项下的权利义务转让给关联公司或业务承继方。</p>
             <p className="mb-2"><strong className="text-foreground">10.5 通知：</strong>我们可能通过应用内公告、电子邮件、短信等方式向您发送通知。如您变更联系方式，应及时更新注册信息，否则自行承担未能收到通知的后果。</p>
             <p className="mb-2"><strong className="text-foreground">10.6 联系方式：</strong>如您对本协议有任何疑问或建议，请通过以下方式联系我们:</p>
             <ul className="list-disc pl-6 mb-2 space-y-1">
-              <li>客服邮箱: <a href="mailto:support@peture.com" className="text-primary hover:underline">support@peture.com</a></li>
-              <li>客服电话: 400-XXX-XXXX</li>
-              <li>邮寄地址: 【实际地址】</li>
+              <li>客服邮箱: <a href="mailto:peture_app@outlook.com" className="text-primary hover:underline">peture_app@outlook.com</a></li>
             </ul>
+            <p className="mb-2">受限于个人开发者的服务条件，目前我们主要通过电子邮件提供客服支持。</p>
             <p>我们将在收到您的投诉、咨询或建议后的 24 小时内响应，7 个工作日内给出明确处理结果。</p>
           </section>
 
