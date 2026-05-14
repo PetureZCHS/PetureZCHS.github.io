@@ -2,115 +2,366 @@ import type { Metadata } from "next";
 import { SectionWrapper } from "@/components/SectionWrapper";
 
 export const metadata: Metadata = {
-  title: "服务条款",
-  description: "智宠合生 Peture 服务条款，使用我们的服务前请仔细阅读",
+  title: "用户协议 | 智宠合生 Peture",
+  description: "智宠合生 Peture 用户协议，请在使用前仔细阅读并了解我们的服务条款及规范",
 };
 
-const sections = [
-  {
-    title: "一、接受条款",
-    content: `欢迎使用智宠合生 Peture（以下简称"Peture"）。通过访问或使用我们的服务，即表示您同意遵守本服务条款（以下简称"条款"）的所有规定。
-      
-      若您不同意这些条款，请勿使用我们的服务。我们保留随时修改这些条款的权利。`,
-  },
-  {
-    title: "二、服务描述",
-    content: `Peture 是一款宠物 AI 服务平台，为宠物主人提供以下服务：
-      
-      • 宠物档案管理：创建和管理宠物数字档案
-      • AI 助手服务：智能宠物护理建议和咨询服务
-      • 智能提醒：疫苗接种、驱虫等重要事项提醒
-      • 智能记账：记录养宠支出和成本分析
-      • AI 生图：生成宠物创意图片和日历
-      • 其他宠物相关服务
-      
-      我们持续改进服务，保留随时调整服务内容的权利。`,
-  },
-  {
-    title: "三、用户责任",
-    content: `使用 Peture 服务时，您同意：
-      
-      • 提供真实、准确的个人信息和宠物信息
-      • 保持账户凭据的安全和保密
-      • 对账户下所有活动负责
-      • 不进行任何违法或有害行为
-      • 不尝试干扰或破坏服务正常运行
-      • 不复制、修改或分发服务内容
-      • 不使用服务进行任何商业用途（除非获得许可）
-      
-      若违反这些责任，我们有权暂停或终止您的账户。`,
-  },
-  {
-    title: "四、知识产权",
-    content: `Peture 服务及其内容（包括但不限于软件、设计、文本、图形、标识）的知识产权归 Peture 或其许可方所有。
-      
-      用户在使用服务过程中创建的宠物档案、生成的图片等内容（以下称"用户内容"），其所有权归用户所有。
-      
-      您授予 Peture 使用用户内容的权利，用于提供和改进我们的服务。我们不会将您的用户内容用于商业目的。`,
-  },
-  {
-    title: "五、免责声明",
-    content: `服务按"原样"提供，不提供任何明示或暗示的保证。
-      
-      Peture 不保证服务无错误、不中断或完全安全。AI 助手提供的信息仅供参考，不构成专业医疗建议。
-      
-      对于宠物健康相关问题，请咨询专业兽医。我们不对任何因使用服务导致的损失负责，包括但不限于直接、间接、偶然或惩罚性损害。`,
-  },
-  {
-    title: "六、责任限制",
-    content: `在适用法律允许的最大范围内，Peture 不对任何间接、特殊、偶然或后果性损害负责。
-      
-      您同意赔偿并保护 Peture 及其关联公司、员工、代理人免受因您使用服务或违反条款导致的任何索赔或要求。`,
-  },
-  {
-    title: "七、条款变更",
-    content: `我们保留随时修改这些条款的权利。修改后的条款将在服务中公布，继续使用服务即表示您接受修改后的条款。
-      
-      重大变更时，我们将通过服务内通知或电子邮件的方式告知您。建议您定期查看条款。`,
-  },
-  {
-    title: "八、适用法律",
-    content: `这些条款受中华人民共和国法律管辖。
-      
-      因本条款产生的或与本条款相关的任何争议，应提交至有管辖权的法院解决。`,
-  },
-];
-
 export default function TermsPage() {
-  const lastUpdated = "2025年4月25日";
+  const lastUpdated = "2026年5月14日";
+  const effectiveDate = "2026年5月14日";
 
   return (
     <div className="min-h-screen">
       <div className="gradient-mesh pt-24 lg:pt-32">
         <SectionWrapper>
-          <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-4xl px-6 md:px-8">
             <h1 className="text-4xl font-bold text-foreground lg:text-5xl">
-              服务条款
+              智宠合生 Peture 用户协议
             </h1>
-            <p className="mt-4 text-lg text-foreground/70">
-              使用 Peture 服务前请仔细阅读以下条款
+            <p className="mt-4 text-sm text-foreground/50">
+              版本日期：{lastUpdated}
             </p>
-            <p className="mt-2 text-sm text-foreground/50">
-              最后更新日期：{lastUpdated}
+            <p className="mt-1 text-sm text-foreground/50">
+              生效日期：{effectiveDate}
             </p>
           </div>
         </SectionWrapper>
       </div>
 
       <SectionWrapper>
-        <div className="mx-auto max-w-4xl">
-          <div className="space-y-12">
-            {sections.map((section) => (
-              <div key={section.title}>
-                <h2 className="text-xl font-semibold text-foreground">
-                  {section.title}
-                </h2>
-                <div className="mt-4 space-y-2 text-base text-foreground/70 leading-relaxed whitespace-pre-line">
-                  {section.content}
-                </div>
-              </div>
-            ))}
+        <div className="mx-auto max-w-4xl px-6 md:px-8 space-y-8 text-foreground/80 leading-relaxed md:pb-20">
+          
+          <section>
+            <h2 className="text-2xl font-bold text-foreground mb-4">【提示条款】</h2>
+            <p className="mb-4">
+              欢迎您注册并使用智宠合生 Peture（以下简称”本应用”或"我们"）产品及服务。本应用由智宠合生开发团队（以下简称"开发团队"或"我们"）开发运营。
+            </p>
+            <p>
+              在您使用本应用服务之前，请您务必认真阅读并充分理解本协议的全部内容，<strong className="text-foreground">特别是以粗体或下划线标识的免除或限制责任条款、法律适用和争议解决条款。</strong>您点击”同意”或实际使用本应用服务，即视为您已阅读、理解并同意接受本协议的约束。如您不同意本协议的任何内容，请立即停止注册或使用本应用服务。
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-foreground mb-4">一、定义与解释</h2>
+            
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">1.1 “智宠合生 Peture”：</h3>
+            <p className="mb-4">指由智宠合生开发团队开发运营的，为用户提供宠物相关服务的移动应用程序、网页端及相关服务。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">1.2 “用户”：</h3>
+            <p className="mb-4">指完成本应用注册程序，获得账号使用权的个人或组织。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">1.3 “服务内容”：</h3>
+            <p>指本应用向用户提供的包括但不限于宠物健康管理、宠物社交、宠物用品推荐、宠物医疗咨询等相关服务。</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-foreground mb-4">二、账号注册与管理</h2>
+            
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">2.1 注册资格</h3>
+            <p className="mb-2">您确认，在您开始注册程序使用本应用服务前，您应当具备中华人民共和国法律规定的与您行为相适应的民事行为能力。</p>
+            <ol className="list-decimal pl-6 mb-4 space-y-2">
+              <li>年满 18 周岁的完全民事行为能力人，可独立注册并使用本服务；</li>
+              <li>14 周岁以上未满 18 周岁的限制民事行为能力人，应在法定监护人陪同下阅读本协议并取得监护人<strong className="text-foreground">明确同意</strong>后，方可注册使用本服务；</li>
+              <li>未满 14 周岁的无民事行为能力人，必须由法定监护人代为完成注册，并取得监护人<strong className="text-foreground">明确同意</strong>后方可使用本服务。</li>
+            </ol>
+            <p className="mb-4">限制民事行为能力人及无民事行为能力人使用本服务的，其法律责任由监护人承担。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">2.2 注册信息</h3>
+            <p className="mb-4">本应用可通过手机号码、邮箱、Apple ID 或其他方式完成账号注册或登录。为保障账号安全和服务使用，我们可能要求您完成必要的身份验证。如您提供的资料不准确、不真实或不完整，我们有权拒绝为您提供服务或随时终止您的用户资格。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">2.3 账号安全</h3>
+            <p className="mb-2">2.3.1 您须对注册账号及密码的安全负责，并对该账号下的所有活动（包括但不限于信息发布、资金操作等）承担全部法律责任。</p>
+            <p className="mb-2">2.3.2 您不得将账号转让、出借、出租或分享给他人使用。如因您保管不善导致账号被盗或密码泄露，您应自行承担相应责任。</p>
+            <p className="mb-4">2.3.3 如发现任何未经授权使用您账号的情况，您应立即通知我们。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">2.4 账号注销</h3>
+            <p className="mb-2">2.4.1 您可以通过本应用“设置-账号安全-注销账号”路径申请注销。我们将在收到申请后的 7 个工作日内完成审核并处理。</p>
+            <p className="mb-2">2.4.2 注销后果：账号注销后，我们将立即停止为您提供服务，并按照以下规则处理您的个人信息：</p>
+            <ol className="list-decimal pl-6 mb-4 space-y-2">
+              <li>对于您的个人身份信息、交易记录等核心数据，我们将在 7 个工作日内依法<strong className="text-foreground">永久删除</strong>；</li>
+              <li>对于已用于 AI 模型训练的用户数据，我们将进行<strong className="text-foreground">不可逆的去标识化处理</strong>（处理后的数据无法单独识别到特定个人，仍属于个人信息范畴），仅用于模型优化和服务改进。对于经过去标识化处理仍属于个人信息的数据，我们将停止一切商业化使用，仅在法定范围内用于技术优化；</li>
+              <li>法律法规要求必须留存的数据（如交易记录、系统日志），我们将在法定留存期限届满后立即删除。</li>
+            </ol>
+            <p>除非法律法规另有强制性规定，我们不会对注销账号的用户数据进行匿名化处理。</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-foreground mb-4">三、服务内容</h2>
+            
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">3.1 服务范围</h3>
+            <p className="mb-2">3.1.1 我们提供的服务内容包括但不限于：</p>
+            <ul className="list-disc pl-6 mb-4 space-y-1">
+              <li>宠物健康档案管理与追踪</li>
+              <li>宠物医疗咨询与预约服务</li>
+              <li>宠物社交与社区互动</li>
+              <li>宠物用品推荐与购买指引</li>
+              <li>宠物行为训练建议</li>
+              <li>其他与宠物相关的增值服务</li>
+            </ul>
+            <p className="mb-2">3.1.2 我们有权根据实际情况随时调整、变更或终止部分或全部服务内容，并会提前通过应用内公告或其他合理方式通知您。</p>
+            <p className="mb-4">3.1.3 本应用提供的宠物医疗咨询服务仅为线上初步建议，不具备处方权和诊断权；所有处方药品和治疗方案必须由线下执业兽医开具。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">3.2 服务费用</h3>
+            <p className="mb-2">3.2.1 针对付费增值服务，我们将明确标注费用标准。您点击购买即视为接受该价格。</p>
+            <p className="mb-2">3.2.2 自动续费：如涉及自动续费服务，我们将在扣费前 5 日通过站内信或短信通知您。您可随时在相关平台设置中取消订阅。</p>
+            <p className="mb-2">3.2.3 退款说明<br/>鉴于数字服务具有即时性、不可复制性和消耗性的特点，除本协议明确约定的可退款情形外，已支付的服务费用原则上不予退还。<br/>符合以下条件的，您可申请退款：</p>
+            <ol className="list-decimal pl-6 mb-2 space-y-1">
+              <li>您购买付费服务后7日内未使用任何服务内容的，可申请全额退款（“未使用”指未产生任何付费功能调用记录、未查看或下载专属付费档案及内容等）；</li>
+              <li>服务存在本协议定义的 "重大缺陷"（指服务无法正常使用超过 72 小时，或服务内容与官方宣传严重不符且无法修复）的，我们将按您未实际使用的服务比例退还相应费用。</li>
+            </ol>
+            <p className="mb-2">退款申请审核通过后，我们将在 7 个工作日内将款项原路退还至您的支付账户。<br/>以下情形不予退款：</p>
+            <ol className="list-decimal pl-6 mb-4 space-y-1">
+              <li>已使用部分或全部服务内容的；</li>
+              <li>因您自身操作不当、设备故障或账号违规被封禁导致服务无法使用的；</li>
+              <li>法律法规另有明确规定的除外。</li>
+            </ol>
+            <p className="mb-2">3.2.4 我们有权根据运营需要调整收费标准，调整前将在应用内显著位置公示。</p>
+            <p className="mb-2">3.2.5 您通过本应用购买的虚拟服务（如会员、AI 咨询次数）仅享有使用权，所有权归我们所有；虚拟服务一经购买，除本协议约定的退款情形外，不予兑换现金或转让。</p>
+            <p className="mb-4">3.2.6 自动续费服务取消后，已开通的服务将持续至当前计费周期结束，我们不会再扣除下一期费用。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">3.3 第三方服务</h3>
+            <p className="mb-2">3.3.1 本应用可能包含指向第三方网站、应用或服务的链接。您理解并同意:</p>
+            <ul className="list-disc pl-6 mb-4 space-y-1">
+              <li>我们对第三方服务的内容、准确性、合法性不承担任何责任；</li>
+              <li>您与第三方之间的交易或纠纷由您自行解决；</li>
+              <li>您使用第三方服务应遵守其相关协议和规则。</li>
+            </ul>
+            <p className="mb-2">3.3.2 为实现支付、地图导航、社交分享等功能，本应用可能会集成第三方 SDK 。 我们将对集成的第三方 SDK 进行安全评估，确保其符合个人信息保护要求；但第三方 SDK 的独立数据收集、使用行为由其开发者负责，您可通过第三方官方渠道查阅其隐私政策。</p>
+            <p className="mb-4">3.3.3 详细的第三方个人信息共享清单请参见《隐私政策》，该清单是本协议不可分割的一部分 。上述文件可通过本应用「设置 - 关于我们 - 法律文件」路径查阅，与本协议同时生效。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">3.4 AI 算法与生成式服务说明</h3>
+            <p className="mb-2">3.4.1 本应用包含基于人工智能算法提供的宠物健康档案分析、行为建议及咨询服务 。</p>
+            <p className="mb-2">3.4.2 AI 生成内容声明： 本应用生成的文字、建议、图像等内容均为 AI 模型根据用户输入的数据自动生成，具有局限性，不代表开发团队的立场。</p>
+            <p className="mb-2">3.4.3 非专业医疗替代： AI 提供的所有宠物健康、训练、医疗相关建议仅供参考，不构成专业医疗诊断、治疗方案、处方或法律意见，不能替代执业兽医的当面诊疗。若宠物出现紧急情况，请务必咨询持有执业资格的专业兽医 。</p>
+            <p className="mb-2">3.4.4 标识义务：我们会对所有 AI 生成的内容进行<strong className="text-foreground">双重标识</strong>：</p>
+            <ol className="list-decimal pl-6 mb-2 space-y-1">
+              <li><strong className="text-foreground">显式标识</strong>：在内容显著位置添加文字标注（如 "AI 生成"）或水印，确保人眼可见；</li>
+              <li><strong className="text-foreground">隐式标识</strong>：在内容的文件元数据中嵌入机器可读的 AI 生成标识，用于内容溯源和合规管理。</li>
+            </ol>
+            <p className="mb-4">用户不得以任何方式删除、遮盖、篡改或伪造上述显式及隐式 AI 标识；若用户违反本条规定，我们有权限制或终止您使用 AI 服务的权限。</p>
+            <p className="mb-2">3.4.5 我们使用的 AI 训练数据均来自合法授权的公开数据或用户授权提供的数据，不包含侵权或违法内容。</p>
+            <p className="mb-2">3.4.6 您输入的用于 AI 服务的内容，仅用于生成对应结果；经您<strong className="text-foreground">单独书面同意</strong>后，我们才会将其用于模型优化。我们将通过弹窗、勾选框等显著方式获取您的单独书面同意，不会将该同意与其他服务条款捆绑。</p>
+            <p className="mb-2">用于模型优化的数据，我们将进行<strong className="text-foreground">去标识化处理</strong>，去除所有可识别到您个人身份的信息；处理后的数据仅用于提升 AI 服务质量，不会用于任何商业推广或第三方共享。</p>
+            <p className="mb-4">您有权随时撤回该同意，撤回后我们将立即停止使用您的相关数据进行模型训练，但已完成去标识化处理并融入模型的部分除外。</p>
+            <p className="mb-2">3.4.7 若 AI 生成内容侵犯第三方合法权益，由我们承担相应法律责任，但因您提供的输入内容违法或侵权导致的除外。</p>
+            <p className="mb-4">3.4.8 本应用 AI 生成的文字、图像等内容的知识产权归我们所有，您仅享有个人非商业使用的权利；未经我们书面许可，不得将 AI 生成内容用于商业用途。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">3.5 个性化推荐服务</h3>
+            <p className="mb-2">3.5.1 为提升用户体验，我们可能会根据您的宠物信息和浏览记录，利用算法向您推荐可能感兴趣的内容或商品 。</p>
+            <p className="mb-2">3.5.2 自主选择权： 您有权在应用的“设置-隐私管理”中随时关闭“个性化推荐”功能。关闭后，我们将不再基于您的个人偏好推送特定内容。</p>
+            <p className="mb-2">3.5.3 我们通过算法推荐的商品或服务广告，将显著标明 "广告" 字样，与非广告内容区分。</p>
+            <p>3.5.4 您关闭个性化推荐后，我们仍会向您展示通用内容，不会降低服务质量。</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-foreground mb-4">四、用户行为规范</h2>
+            
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">4.1 合法使用承诺</h3>
+            <p className="mb-2">您承诺在使用本应用服务时遵守中华人民共和国法律法规，不得从事以下行为：</p>
+            <ul className="list-none space-y-1 mb-4">
+              <li>4.1.1 违反宪法确定的基本原则，危害国家安全、泄露国家秘密、颠覆国家政权、破坏国家统一；</li>
+              <li>4.1.2 损害国家荣誉和利益，煽动民族仇恨、民族歧视,破坏民族团结；</li>
+              <li>4.1.3 破坏国家宗教政策，宣扬邪教和封建迷信；</li>
+              <li>4.1.4 散布谣言,扰乱社会秩序，破坏社会稳定；</li>
+              <li>4.1.5 散布淫秽、色情、赌博、暴力、凶杀、恐怖或教唆犯罪的信息；</li>
+              <li>4.1.6 侮辱或诽谤他人，侵害他人合法权益；</li>
+              <li>4.1.7 侵犯他人知识产权、商业秘密、肖像权、隐私权等合法权益；</li>
+              <li>4.1.8 利用本应用从事诈骗、洗钱、非法集资等违法金融活动；</li>
+              <li>4.1.9 发布虚假广告或误导性信息，侵害消费者权益；</li>
+              <li>4.1.10 其他违反法律法规或公序良俗的行为。</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">4.2 禁止行为</h3>
+            <p className="mb-2">您不得从事以下行为:</p>
+            <ul className="list-none space-y-1 mb-4">
+              <li>4.2.1 对本应用进行反向工程、反向汇编、反向编译或以其他方式尝试发现源代码；</li>
+              <li>4.2.2 使用任何自动化程序、软件、引擎、网络爬虫、网页分析工具、数据挖掘工具或类似工具接入本应用服务；</li>
+              <li>4.2.3 未经授权访问或尝试访问本应用的服务器、数据库或非公开区域；</li>
+              <li>4.2.4 干扰或破坏本应用服务的正常运行，包括但不限于传播病毒、木马、恶意代码等；</li>
+              <li>4.2.5 未经我们书面许可，将本应用用于商业目的或进行二次开发；</li>
+              <li>4.2.6 收集、存储、使用其他用户的个人信息，或向第三方泄露、出售用户数据；</li>
+              <li>4.2.7 发布、传播侵犯他人知识产权的内容；</li>
+              <li>4.2.8 利用本应用服务发布垃圾信息、广告信息或进行其他骚扰行为。</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">4.3 内容发布规范</h3>
+            <p className="mb-2">4.3.1 您在本应用发布的内容（包括但不限于文字、图片、视频、评论等）应真实、合法、健康，不得含有违法或不良信息。</p>
+            <p className="mb-2">4.3.2 您发布的内容如涉及他人（包括您的宠物）的肖像、隐私等信息,您应确保已获得合法授权。</p>
+            <p className="mb-2">4.3.3 您理解并同意，您在本应用上传、发布的任何内容,即视为您授予我们在全球范围内免费、非独家、可再许可的权利，使我们有权为提供服务和宣传推广之目的使用、复制、修改、改编、出版、翻译、传播该等内容，您保留对该等内容的完整知识产权。</p>
+            <p>4.3.4 您应确保上传的宠物健康记录、医疗信息、疫苗记录等内容真实准确；因信息虚假或不完整导致 AI 建议错误、医疗预约失误或其他后果的，由您自行承担全部责任。</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-foreground mb-4">五、个人信息保护</h2>
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">5.1 信息收集</h3>
+            <p className="mb-2">5.1.1 我们非常重视您的个人信息保护，将按照《中华人民共和国个人信息保护法》等法律法规的规定收集、使用、存储和保护您的个人信息。</p>
+            <p className="mb-2">5.1.2 我们收集的个人信息类型包括但不限于:</p>
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>基本资料: 昵称、头像、性别、年龄等；</li>
+              <li>联系信息: 手机号码、电子邮箱、地址等；</li>
+              <li>宠物信息: 宠物名称、品种、年龄、健康状况、疫苗记录等；</li>
+              <li>设备信息: 设备型号、操作系统版本、设备标识符（IMEI、Android ID、IDFA等）、IP地址等；</li>
+              <li>位置信息: 经您授权后获取的地理位置信息；</li>
+              <li>使用记录: 浏览记录、点击记录、搜索记录、交易记录等；</li>
+            </ul>
+            <p className="mb-2">我们仅收集为提供服务所必需的个人信息，不会收集与服务无关的信息；生物识别信息仅用于身份验证，不存储原始特征数据，验证完成后立即删除。</p>
+            <p className="mb-4">5.1.3 我们收集个人信息的目的是为您提供服务、改进产品体验、保障账号安全及遵守法律法规要求。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">5.2 信息使用与共享</h3>
+            <p className="mb-2">5.2.1 我们仅在以下情况下使用您的个人信息:</p>
+            <ul className="list-disc pl-6 mb-4 space-y-1">
+              <li>为您提供本应用服务所必需；</li>
+              <li>改进和优化我们的服务；</li>
+              <li>保障账号和交易安全；</li>
+              <li>经您同意的其他用途。</li>
+            </ul>
+            <p className="mb-2">5.2.2 我们不会将您的个人信息出售给任何第三方，但以下情况除外:</p>
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>获得您的明确同意；</li>
+              <li>根据法律法规规定或政府主管部门要求；</li>
+              <li>为维护我们或公众的合法权益所必需；</li>
+              <li>与关联公司共享（仅在必要范围内且受本协议约束）；</li>
+              <li>与可信赖的合作伙伴共享（仅用于提供服务所必需,且受保密义务约束）。</li>
+            </ul>
+            <p className="mb-4">与第三方共享个人信息时，我们将对信息进行去标识化处理，并要求第三方严格遵守保密义务，不得将信息用于约定以外的用途。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">5.3 信息保护与安全</h3>
+            <p className="mb-2">5.3.1 我们采取符合业界标准的安全防护措施保护您的个人信息，包括但不限于加密技术、访问控制、安全审计等。</p>
+            <p className="mb-2">5.3.2 尽管我们采取了合理措施，但请您理解，由于技术限制和互联网环境的复杂性，我们无法保证信息的绝对安全。</p>
+            <p className="mb-4">5.3.3 如发生个人信息泄露等安全事件，我们将立即采取补救措施，并在 72 小时内将事件情况、影响范围、风险等级及应对措施告知受影响用户，同时依法向网信等监管部门报告。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">5.4 您的权利</h3>
+            <p className="mb-2">根据相关法律法规,您对自己的个人信息享有以下权利:</p>
+            <ul className="list-disc pl-6 mb-4 space-y-1">
+              <li>查询、复制您的个人信息；</li>
+              <li>更正、补充不准确的个人信息；</li>
+              <li>删除您的个人信息（法律法规另有规定的除外）；</li>
+              <li>撤回同意（撤回同意不影响此前基于同意已进行的处理活动）；</li>
+              <li>注销账号；</li>
+              <li>要求我们对个人信息处理规则进行解释说明。</li>
+              <li>要求我们将您的个人信息转移至您指定的第三方（符合国家网信部门规定条件的，我们将提供便捷的转移途径）。</li>
+            </ul>
+            <p>详细的个人信息处理规则请参见《智宠合生 Peture 隐私政策》，该政策构成本协议不可分割的组成部分。上述文件可通过本应用「设置 - 关于我们 - 法律文件」路径查阅，与本协议同时生效。</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-foreground mb-4">六、知识产权</h2>
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">6.1 我们的知识产权</h3>
+            <p className="mb-2">6.1.1 本应用的全部知识产权（包括但不限于商标、专利、著作权、商业秘密等）归智宠合生开发团队或其合法权利人所有。</p>
+            <p className="mb-2">6.1.2 未经我们书面许可，您不得复制、修改、传播、出版、展示、表演、制作衍生作品或以其他方式使用本应用的任何内容。</p>
+            <p className="mb-4">6.1.3 您不得删除、修改或掩藏本应用中包含的任何版权标识、商标或其他专有权利声明。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">6.2 用户内容的知识产权</h3>
+            <p className="mb-2">6.2.1 您在本应用发布的内容的知识产权归您或相关权利人所有。</p>
+            <p className="mb-2">6.2.2 您应确保您发布的内容不侵犯任何第三方的知识产权，如您发布的内容涉及侵权，您应自行承担全部法律责任。</p>
+            <p className="mb-2">6.2.3 如您认为本应用上的内容侵犯了您的知识产权，请通过本协议提供的联系方式向我们提交书面通知，我们将依法处理。</p>
+            <p>6.2.4 您向我们提交的任何反馈、建议或创意，视为您授予我们永久、免费、全球范围内的非独家使用权，我们可用于改进产品和服务，无需向您支付任何费用。</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-foreground mb-4">七、免责声明与责任限制</h2>
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">7.1 服务性质声明</h3>
+            <p className="mb-2">7.1.1 本应用中的宠物用品推荐、商家信息等仅供参考，我们不保证其质量、安全性或合法性，您应自行判断并承担交易风险。</p>
+            <p className="mb-4">7.1.2 本应用仅提供线上社交与信息发布平台，用户通过本应用发起的线下见面、宠物寄养、宠物交易等活动，相关风险与责任由参与方自行承担；我们不对线下活动的安全性、合法性承担任何担保责任。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">7.2 服务中断与变更</h3>
+            <p className="mb-2">7.2.1 我们不对以下情况导致的服务中断或终止承担责任:</p>
+            <ul className="list-disc pl-6 mb-4 space-y-1">
+              <li>系统维护、升级或故障修复；</li>
+              <li>不可抗力因素，包括但不限于自然灾害、战争、政府行为、网络攻击等；</li>
+              <li>第三方原因，包括但不限于电信运营商故障、第三方服务中断等；</li>
+              <li>您自身原因，包括但不限于操作不当、设备故障等。</li>
+            </ul>
+            <p className="mb-2">7.2.2 我们有权根据运营需要随时变更、中断或终止部分或全部服务，且无需对您或任何第三方承担责任，但法律法规另有规定的除外。</p>
+            <p className="mb-2">7.2.3 本协议所称 "不可抗力" 指不能预见、不能避免且不能克服的客观情况，包括但不限于自然灾害、战争、政府管制、网络攻击、电力中断等。</p>
+            <p className="mb-4">7.2.4 我们进行系统维护或升级时，将提前 24 小时通过应用内公告通知您；紧急维护除外，但事后会及时补发通知。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">7.3 用户行为责任</h3>
+            <p className="mb-2">7.3.1 您应独立承担因使用本应用服务而产生的全部责任，包括但不限于因您发布的内容、与他人的交易纠纷等引起的法律责任。</p>
+            <p className="mb-4">7.3.2 如您违反本协议或相关法律法规，导致我们遭受损失（包括但不限于经济损失、声誉损失、律师费等），您应予以赔偿。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">7.4 责任限制</h3>
+            <p className="mb-2">在法律法规允许的最大范围内，我们对以下情况不承担赔偿责任:</p>
+            <ul className="list-disc pl-6 mb-4 space-y-1">
+              <li>任何间接的、附带的、特殊的、惩罚性的或后果性的损害；</li>
+              <li>因您使用或无法使用本应用服务而导致的利润损失、数据丢失、商誉损失等；</li>
+              <li>因第三方行为或不可抗力导致的损失。</li>
+            </ul>
+            <p>无论如何，我们对您的赔偿责任总额不超过您在过去 12 个月内向我们支付的服务费用总额（如有），或人民币<strong className="text-foreground">1000 元</strong>（以较高者为准）；因我们故意或重大过失造成的人身损害赔偿责任，不适用本条限制。</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-foreground mb-4">八、协议的变更与终止</h2>
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">8.1 协议变更</h3>
+            <p className="mb-2">8.1.1 我们有权根据法律法规变化或业务发展需要随时修改本协议，修改后的协议将提前 7 日在应用内显著位置公示，公示期满后生效；如您不同意修改，可在公示期内注销账号。</p>
+            <p className="mb-4">8.1.2 如您不同意修改后的协议，您有权停止使用本应用服务。如您继续使用，视为您接受修改后的协议。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">8.2 协议终止</h3>
+            <p className="mb-2">8.2.1 您有权随时终止使用本应用服务，并申请注销账号。</p>
+            <p className="mb-2">8.2.2 违规处理措施<br/>如您违反本协议，我们有权视情节严重程度采取以下措施：</p>
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>警告并限期整改；</li>
+              <li>限制发布内容或部分功能使用；</li>
+              <li>封禁账号一定期限；</li>
+              <li>永久终止账号使用并列入黑名单；</li>
+              <li>对于涉嫌违法犯罪的账号，我们将保留相关记录，并向公安机关报案；</li>
+            </ul>
+            <p className="mb-2">账号被永久封禁后，您已购买但未使用的虚拟服务将自动失效，我们不予退还费用；但因我们过错导致账号错误封禁的除外。<br/>告知与申诉： 我们在采取上述处置措施时，将通过站内信、邮件或短信等方式告知您处理结论及原因。如您对处理结果有异议，可在收到通知之日起 7 个工作日内 通过本协议约定的联系方式向我们发起申诉。我们将在收到申诉后的 15 个工作日内 完成复核并告知您复核结果。</p>
+            <p>8.2.3 终止后的数据处理：协议终止或账号注销后，除法律法规另有规定（如《电子商务法》要求商品和服务信息、交易记录保存时间自交易完成之日起不少于 三年；《网络安全法》要求的日志留存不少于 六个月）外，我们将停止为您提供服务，并在 15 个工作日内对您的个人信息进行删除或去标识化处理。</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-foreground mb-4">九、法律适用与争议解决</h2>
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">9.1 法律适用</h3>
+            <p className="mb-4">本协议的订立、执行、解释及争议解决均适用中华人民共和国法律（不包括冲突法规则）。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">9.2 争议解决</h3>
+            <p className="mb-2">9.2.1 因本协议引起的或与本协议相关的任何争议，双方应首先通过友好协商解决。</p>
+            <p>9.2.2 因本协议引起的或与本协议相关的任何争议，协商不成的，任何一方均可向本协议签订地有管辖权的人民法院提起诉讼。</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-foreground mb-4">十、其他条款</h2>
+            <p className="mb-2"><strong className="text-foreground">10.1 完整协议：</strong>本协议构成您与我们之间关于本应用服务的完整协议，取代双方此前就相同事项达成的任何口头或书面协议。</p>
+            <p className="mb-2"><strong className="text-foreground">10.2 可分割性：</strong>如本协议任何条款被认定为无效或不可执行，该条款应在必要范围内进行修改以使其可执行,其余条款仍具有完全效力。</p>
+            <p className="mb-2"><strong className="text-foreground">10.3 权利不放弃：</strong>我们未行使或延迟行使本协议项下的任何权利，不构成对该权利的放弃。</p>
+            <p className="mb-2"><strong className="text-foreground">10.4 转让：</strong>未经我们书面同意，您不得将本协议项下的权利义务转让给任何第三方。我们有权在符合法律法规的前提下将本协议项下的权利义务转让给关联公司或业务承继方。</p>
+            <p className="mb-2"><strong className="text-foreground">10.5 通知：</strong>我们可能通过应用内公告、电子邮件、短信等方式向您发送通知。如您变更联系方式，应及时更新注册信息，否则自行承担未能收到通知的后果。</p>
+            <p className="mb-2"><strong className="text-foreground">10.6 联系方式：</strong>如您对本协议有任何疑问或建议，请通过以下方式联系我们:</p>
+            <ul className="list-disc pl-6 mb-2 space-y-1">
+              <li>客服邮箱: <a href="mailto:support@peture.com" className="text-primary hover:underline">support@peture.com</a></li>
+              <li>客服电话: 400-XXX-XXXX</li>
+              <li>邮寄地址: 【实际地址】</li>
+            </ul>
+            <p>我们将在收到您的投诉、咨询或建议后的 24 小时内响应，7 个工作日内给出明确处理结果。</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-foreground mb-4">十一、特别约定</h2>
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">11.1 未成年人保护</h3>
+            <p className="mb-2">11.1.1 我们特别重视对未成年人个人信息的保护。若您是未满 14 周岁的未成年人，在使用本应用服务前，必须获得父母或其他监护人的明确同意，并在监护人的指导下使用。我们仅在法律法规允许且获得监护人同意的情况下收集、使用未成年人的个人信息。</p>
+            <p className="mb-2">11.1.2 14 周岁以上未满 18 周岁的未成年人，应在监护人的陪同下阅读本协议，并在监护人同意后使用本服务；监护人有权要求更正或删除未成年人的个人信息。</p>
+            <p className="mb-2">11.1.3 若我们发现用户为未满 14 周岁的未成年人且未获得监护人同意，将立即停止为其提供服务，并删除其个人信息。</p>
+            <p className="mb-2">11.1.4对于未成年人的<strong className="text-foreground">敏感个人信息</strong>（包括地理位置信息、面部识别信息、生物特征信息、健康信息等），我们将采取严格的保护措施：</p>
+            <ol className="list-decimal pl-6 mb-4 space-y-2">
+              <li>收集未成年人敏感个人信息前，必须取得监护人的<strong className="text-foreground">明确同意</strong>；</li>
+              <li>监护人有权随时撤回该同意，撤回后我们将立即停止收集并删除已收集的未成年人敏感个人信息；</li>
+              <li>我们仅在为提供服务所必需的最小范围内收集和使用未成年人敏感个人信息，不会用于任何其他用途。</li>
+            </ol>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">11.2 宠物数据使用</h3>
+            <p className="mb-2">11.2.1 您同意我们收集、使用您提供的宠物相关信息，用于建立宠物健康档案、提供个性化服务及改进产品功能。</p>
+            <p className="mb-4">11.2.2 您应确保您有权提供该等宠物信息，如涉及他人所有的宠物，您应获得合法授权。</p>
+
+            <h3 className="text-xl font-semibold text-foreground mb-2 mt-6">11.3 紧急情况处理</h3>
+            <p className="mb-2">11.3.1 在涉及宠物生命安全的紧急情况下，您理解并同意我们可能根据您提供的信息提供力所能及的协助措施，但我们不承担因紧急情况处理而产生的任何法律责任。</p>
+            <p className="mb-4">11.3.2 若您的宠物出现紧急情况（如呼吸困难、大出血、中毒等），请立即前往就近的宠物医院救治，我们的线上服务无法替代紧急医疗处理。</p>
+          </section>
+
+          <div className="pt-8 border-t border-border/50 text-right text-sm text-foreground/60">
+            <p>智宠合生开发团队 保留所有权利</p>
           </div>
+
         </div>
       </SectionWrapper>
     </div>

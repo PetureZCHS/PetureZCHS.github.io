@@ -65,7 +65,7 @@ const defaultSections: FooterSection[] = [
     links: [
       { label: "帮助中心", href: "#help" },
       { label: "隐私政策", href: "/privacy" },
-      { label: "服务条款", href: "/terms" },
+      { label: "用户协议", href: "/terms" },
     ],
   },
 ];
@@ -149,7 +149,7 @@ export function Footer({
               href="/terms"
               className="text-sm text-foreground-light transition-colors hover:text-primary"
             >
-              服务条款
+              用户协议
             </Link>
           </div>
         </div>
